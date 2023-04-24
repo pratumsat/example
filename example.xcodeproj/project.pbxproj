@@ -14,6 +14,16 @@
 		F9ADB9EC29F625970020F320 /* exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADB9EB29F625970020F320 /* exampleTests.swift */; };
 		F9ADB9F629F625970020F320 /* exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADB9F529F625970020F320 /* exampleUITests.swift */; };
 		F9ADB9F829F625970020F320 /* exampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADB9F729F625970020F320 /* exampleUITestsLaunchTests.swift */; };
+		F9ADBA0729F6266A0020F320 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADBA0629F6266A0020F320 /* ContentViewModel.swift */; };
+		F9ADBA0A29F627ED0020F320 /* CurrentPriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADBA0929F627ED0020F320 /* CurrentPriceModel.swift */; };
+		F9ADBA0C29F645E80020F320 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADBA0B29F645E80020F320 /* DetailView.swift */; };
+		F9ADBA0F29F655C80020F320 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F9ADBA0E29F655C80020F320 /* CombineMoya */; };
+		F9ADBA1129F655C80020F320 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F9ADBA1029F655C80020F320 /* Moya */; };
+		F9ADBA1429F657400020F320 /* GetCurrentPriceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADBA1329F657400020F320 /* GetCurrentPriceRepository.swift */; };
+		F9ADBA1729F658880020F320 /* CurrentPriceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADBA1629F658880020F320 /* CurrentPriceProvider.swift */; };
+		F9ADBA1929F665650020F320 /* ContentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADBA1829F665650020F320 /* ContentViewModelTests.swift */; };
+		F9ADBA1C29F665FC0020F320 /* GetCurrentPriceRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADBA1B29F665FC0020F320 /* GetCurrentPriceRepositorySpy.swift */; };
+		F9ADBA1F29F6683E0020F320 /* DataMockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ADBA1E29F6683E0020F320 /* DataMockManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,14 @@
 		F9ADB9F129F625970020F320 /* exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9ADB9F529F625970020F320 /* exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleUITests.swift; sourceTree = "<group>"; };
 		F9ADB9F729F625970020F320 /* exampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9ADBA0629F6266A0020F320 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		F9ADBA0929F627ED0020F320 /* CurrentPriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPriceModel.swift; sourceTree = "<group>"; };
+		F9ADBA0B29F645E80020F320 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F9ADBA1329F657400020F320 /* GetCurrentPriceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentPriceRepository.swift; sourceTree = "<group>"; };
+		F9ADBA1629F658880020F320 /* CurrentPriceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPriceProvider.swift; sourceTree = "<group>"; };
+		F9ADBA1829F665650020F320 /* ContentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelTests.swift; sourceTree = "<group>"; };
+		F9ADBA1B29F665FC0020F320 /* GetCurrentPriceRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentPriceRepositorySpy.swift; sourceTree = "<group>"; };
+		F9ADBA1E29F6683E0020F320 /* DataMockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMockManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9ADBA1129F655C80020F320 /* Moya in Frameworks */,
+				F9ADBA0F29F655C80020F320 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +114,12 @@
 		F9ADB9D929F625950020F320 /* example */ = {
 			isa = PBXGroup;
 			children = (
+				F9ADBA1529F6586A0020F320 /* Providers */,
+				F9ADBA1229F6571D0020F320 /* Repository */,
+				F9ADBA0829F627DC0020F320 /* Model */,
+				F9ADBA0529F6260E0020F320 /* View */,
+				F9ADBA0429F626010020F320 /* ViewModel */,
 				F9ADB9DA29F625950020F320 /* exampleApp.swift */,
-				F9ADB9DC29F625950020F320 /* ContentView.swift */,
 				F9ADB9DE29F625960020F320 /* Assets.xcassets */,
 				F9ADB9E029F625960020F320 /* Preview Content */,
 			);
@@ -113,7 +137,10 @@
 		F9ADB9EA29F625970020F320 /* exampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				F9ADBA1D29F668280020F320 /* Mock */,
+				F9ADBA1A29F665EF0020F320 /* Spy */,
 				F9ADB9EB29F625970020F320 /* exampleTests.swift */,
+				F9ADBA1829F665650020F320 /* ContentViewModelTests.swift */,
 			);
 			path = exampleTests;
 			sourceTree = "<group>";
@@ -125,6 +152,63 @@
 				F9ADB9F729F625970020F320 /* exampleUITestsLaunchTests.swift */,
 			);
 			path = exampleUITests;
+			sourceTree = "<group>";
+		};
+		F9ADBA0429F626010020F320 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9ADBA0629F6266A0020F320 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9ADBA0529F6260E0020F320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9ADB9DC29F625950020F320 /* ContentView.swift */,
+				F9ADBA0B29F645E80020F320 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9ADBA0829F627DC0020F320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9ADBA0929F627ED0020F320 /* CurrentPriceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9ADBA1229F6571D0020F320 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F9ADBA1329F657400020F320 /* GetCurrentPriceRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F9ADBA1529F6586A0020F320 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				F9ADBA1629F658880020F320 /* CurrentPriceProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		F9ADBA1A29F665EF0020F320 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				F9ADBA1B29F665FC0020F320 /* GetCurrentPriceRepositorySpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		F9ADBA1D29F668280020F320 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F9ADBA1E29F6683E0020F320 /* DataMockManager.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +227,10 @@
 			dependencies = (
 			);
 			name = example;
+			packageProductDependencies = (
+				F9ADBA0E29F655C80020F320 /* CombineMoya */,
+				F9ADBA1029F655C80020F320 /* Moya */,
+			);
 			productName = example;
 			productReference = F9ADB9D729F625950020F320 /* example.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +303,9 @@
 				Base,
 			);
 			mainGroup = F9ADB9CE29F625940020F320;
+			packageReferences = (
+				F9ADBA0D29F655C80020F320 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = F9ADB9D829F625950020F320 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +349,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9ADB9DD29F625950020F320 /* ContentView.swift in Sources */,
+				F9ADBA0A29F627ED0020F320 /* CurrentPriceModel.swift in Sources */,
+				F9ADBA1729F658880020F320 /* CurrentPriceProvider.swift in Sources */,
 				F9ADB9DB29F625950020F320 /* exampleApp.swift in Sources */,
+				F9ADBA0C29F645E80020F320 /* DetailView.swift in Sources */,
+				F9ADBA1429F657400020F320 /* GetCurrentPriceRepository.swift in Sources */,
+				F9ADBA0729F6266A0020F320 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +362,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9ADBA1929F665650020F320 /* ContentViewModelTests.swift in Sources */,
 				F9ADB9EC29F625970020F320 /* exampleTests.swift in Sources */,
+				F9ADBA1C29F665FC0020F320 /* GetCurrentPriceRepositorySpy.swift in Sources */,
+				F9ADBA1F29F6683E0020F320 /* DataMockManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +676,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9ADBA0D29F655C80020F320 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9ADBA0E29F655C80020F320 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9ADBA0D29F655C80020F320 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		F9ADBA1029F655C80020F320 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9ADBA0D29F655C80020F320 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9ADB9CF29F625940020F320 /* Project object */;
 }
